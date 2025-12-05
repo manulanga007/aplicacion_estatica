@@ -4,18 +4,26 @@ const btnNormal = document.getElementById("btnNormal");
 
 
 let escala = 1;
-const incremento = 0.2;
-const maxEscala = 3; // por ejemplo, no dejar crecer más de 3x
 
-btnAumentar.addEventListener("click", () => {
-    escala = Math.min(escala + incremento, maxEscala);
-    imagen.style.transform = `scale(${escala})`;
-});
+function aumentar() {
+    escala += 0.2;
+    actualizarEscala();
+}
 
-
-// Vuelve al tamaño normal
-btnNormal.addEventListener("click", () => {
+function normal() {
     escala = 1;
-    imagen.style.transform = "scale(1)";
-});
+    actualizarEscala();
+}
+
+function reducir() {
+    if (escala > 0.2) {  
+        escala -= 0.2;
+        actualizarEscala();
+    }
+}
+
+function actualizarEscala() {
+    const imagen = document.getElementById("imagen");
+    imagen.style.transform = `scale(${escala})`;
+}
 
