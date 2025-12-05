@@ -89,3 +89,21 @@ Controla la lógica:
 Emanuel
 
 Proyecto creado para práctica de manejo de imágenes dinámicas con JavaScript.
+
+# Imagen Interactiva con Botones
+
+## Descripción
+Pequeña página web que permite interactuar con una imagen: aumentarla progresivamente, reducirla y volverla a su tamaño original. La página incluye transiciones suaves, controles accesibles y un layout que evita que la imagen tape los botones.
+
+## Objetivos
+- Practicar control del DOM con JavaScript.
+- Implementar interacciones progresivas (`scale`) y límites.
+- Aprender flujo de trabajo con Git: ramas, commits y Pull Requests.
+- Mantener buenas prácticas de accesibilidad y estructura de proyecto.
+
+## Requisitos básicos
+- Navegador moderno (Chrome, Firefox, Edge).
+- Git instalado.
+- (Opcional) GitHub account.
+
+## Estructura del proyecto
