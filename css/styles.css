@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f2f2f2;
+    margin-top: 40px;
+}
+
+/* Caja principal */
+.container {
+    display: inline-block;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Caja que mantiene fijo el espacio para la imagen */
+.imagen-box {
+    height: 300px; /* espacio reservado */
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    margin-bottom: 20px;
+}
+
+/* Imagen */
+img {
+    width: 200px;
+    transition: transform 0.3s ease;
+    transform-origin: center bottom; /* crece hacia arriba */
+}
+
+/* Botones */
+.btn {
+    padding: 10px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+/* Efecto al hacer clic */
+.btn:active {
+    transform: scale(0.9);
+    background: #45a049;
+}
+
+.btn:hover {
+    background: #5ecf63;
+}
