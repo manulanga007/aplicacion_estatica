@@ -32,25 +32,33 @@ img {
     transform-origin: center bottom; /* crece hacia arriba */
 }
 
-/* Botones */
-.btn {
-    padding: 10px 25px;
-    margin: 5px;
+.botones button {
+    background: linear-gradient(135deg, #ff3c00, #ff0000);
+    color: #fff;
     border: none;
-    border-radius: 10px;
-    background: #4CAF50;
-    color: white;
-    font-size: 16px;
+    padding: 14px 28px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.2s, background 0.3s;
+    border-radius: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    box-shadow: 0 0 20px #ff3c00, 0 0 40px #ff0000;
 }
 
-/* Efecto al hacer clic */
-.btn:active {
+/* Hover: modo FUEGO */
+.botones button:hover {
+    transform: scale(1.15) rotate(2deg);
+    background: linear-gradient(135deg, #ff6a00, #ff1a1a);
+    box-shadow: 0 0 30px #ff6a00, 0 0 70px #ff1a1a, 0 0 20px white inset;
+}
+
+/* Active */
+.botones button:active {
     transform: scale(0.9);
-    background: #45a049;
+    box-shadow: 0 0 10px #ff3c00, 0 0 20px #ff0000;
 }
 
-.btn:hover {
-    background: #5ecf63;
-}
+
