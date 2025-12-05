@@ -61,4 +61,31 @@ img {
     box-shadow: 0 0 10px #ff3c00, 0 0 20px #ff0000;
 }
 
+/* ----------- RESPONSIVE PARA TABLET ----------- */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 10px;
+    }
+
+    .btn {
+        width: 45%;       /* botones grandes y organizados */
+    }
+}
+
+/* ----------- RESPONSIVE PARA CELULAR ----------- */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .btn {
+        width: 100%;      /* cada botón ocupa todo el ancho */
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .zona-imagen img {
+        max-width: 260px; /* imagen más pequeña para móvil */
+    }
+}
 
